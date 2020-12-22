@@ -84,8 +84,8 @@ function draw(){
   stroke("white");
   textSize(20);
   fill("white");
-  text("SCORE : "+ score, displayWidth - 300, 20);
-  text("TIME : "+time, displayWidth - 300, 50);
+  text("SCORE : "+ score, camera.position.x + 300, 20);
+  text("TIME : "+time, camera.position.x  + 300, 50);
   
   //camera.position.y = displayHeight
 }
