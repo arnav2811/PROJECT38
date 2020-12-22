@@ -91,7 +91,7 @@ function draw(){
 }
 function myBanana(){
   if(frameCount%70===0){
-    banana = createSprite(camera.position.x + 700 ,Math.round(random(200, 400)))
+    banana = createSprite(camera.position.x + 1500 ,Math.round(random(200, 400)))
     banana.addImage(bananaImg);
     banana.velocityX = 0;
     banana.scale= 0.1;
@@ -101,7 +101,7 @@ function myBanana(){
 }
 function barrier() {
   if(frameCount%100===0){
-    obstacles = createSprite(camera.position.x + 700, 530);
+    obstacles = createSprite(camera.position.x + 1500, 530);
     obstacles.addImage(obstaclesImg);
     obstacles.scale = 0.3;
     obstacles.velocityX = 0;
