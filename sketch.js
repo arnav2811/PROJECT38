@@ -17,6 +17,7 @@ obstaclesImg = loadImage("image/stone.png");
 function setup(){
   createCanvas(displayWidth, displayHeight);
   ground = createSprite(displayWidth/2, 570, displayWidth, 5);
+  ground.visible = false
   monkey = createSprite(60, 500);
   monkey.addAnimation("running",monkeyImg);
   monkey.velocityX = 10
