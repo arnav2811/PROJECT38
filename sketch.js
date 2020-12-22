@@ -30,7 +30,9 @@ function setup(){
 }
 function draw(){
   camera.position.x = monkey.x
-  ground = createSprite(camera.position.x/2, 570, displayWidth, 5);
+  if(ground.x < camera.position.x){
+    ground = createSprite(camera.position.x/2, 570, camera.position.x, 5);
+  }
   //background(rgb(50, 100, 100))
   background(backImg);
   time = time + (Math.round(frameRate())/100)
