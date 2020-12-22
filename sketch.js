@@ -34,12 +34,8 @@ function draw(){
   if(ground.x < camera.position.x){
     ground = createSprite(camera.position.x/2, 570, camera.position.x, 5);
   }
-  //background(rgb(50, 100, 100))
   background(backImg);
   time = time + (Math.round(frameRate())/100)
-  /*if(back.x<0){
-    back.x = back.width/2;
-  }*/
   if(ground.x<(camera.position.x - 1)){
     ground.x = camera.position.x/2;
   }
